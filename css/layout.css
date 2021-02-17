@@ -1,0 +1,54 @@
+.wrap{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 40.5vw 30vw 19.5vw;
+  grid-template-rows: 5.5vh 37.5vh 33vh;
+  column-gap: 44px;
+  row-gap: 30px;
+}
+div{
+  border: 2px solid green;
+}
+.name{
+  width: 928px;
+  height: 42px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+}
+.colour{
+  width: 47px;
+  height: 47px;
+  justify-self: end;
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+.weather{
+  width: 550px;
+  height: 305px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+}
+.ship{
+  width: 343px;
+  height: 600px;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.ads{
+  width: 142px;
+  height: 600px;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.control{
+  width: 550px;
+  height: 266px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+}
