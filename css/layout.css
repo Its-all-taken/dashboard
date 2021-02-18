@@ -1,28 +1,29 @@
 .wrap{
   display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-columns: 40.5vw 30vw 19.5vw;
-  grid-template-rows: 5.5vh 37.5vh 33vh;
+  grid-template-columns: .4fr .2fr .1fr;
+  grid-template-rows: .1fr .2fr .2fr;
   column-gap: 44px;
   row-gap: 30px;
+  width: 90vw;
 }
+/* все ломается на 1827ширины */
 div{
   border: 2px solid green;
 }
-.name{
-  width: 928px;
-  height: 42px;
+.header{
+  display: flex;
+  justify-content: space-between;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
 }
+.name{
+  width: 928px;
+  height: 42px;
+}
 .colour{
   width: 47px;
   height: 47px;
-  justify-self: end;
-  grid-column-start: 3;
-  grid-row-start: 1;
 }
 .weather{
   width: 550px;
@@ -36,14 +37,14 @@ div{
   height: 600px;
   grid-column-start: 2;
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
 .ads{
   width: 142px;
   height: 600px;
   grid-column-start: 3;
   grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-end: 3;
 }
 .control{
   width: 550px;
