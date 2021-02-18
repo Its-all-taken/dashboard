@@ -1,25 +1,27 @@
 .wrap{
   display: grid;
+  position: absolute;
   grid-template-columns: .4fr .2fr .1fr;
   grid-template-rows: .1fr .2fr .2fr;
   column-gap: 44px;
-  row-gap: 30px;
-  width: 90vw;
+  row-gap: 25px;
+  width: 1135px;
+  height: 685px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-/* все ломается на 1827ширины */
 div{
   border: 2px solid green;
 }
 .header{
   display: flex;
   justify-content: space-between;
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
+  grid-column: auto / span 3;
 }
 .name{
   width: 928px;
-  height: 42px;
+  height: 47px;
 }
 .colour{
   width: 47px;
@@ -28,28 +30,23 @@ div{
 .weather{
   width: 550px;
   height: 305px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
+  grid-column: 1 / span 2;;
+  grid-row: 2;
 }
 .ship{
   width: 343px;
   height: 600px;
-  grid-column-start: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column: 2;
+  grid-row: 2 / span 2;
 }
 .ads{
   width: 142px;
   height: 600px;
-  grid-column-start: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column: 3;
+  grid-row: 2 / span 2;
 }
 .control{
   width: 550px;
   height: 266px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
+  grid-column: 1 / span 1;
 }
