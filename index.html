@@ -2,22 +2,43 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/master.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js\jquery-3.5.1.js" charset="utf-8"></script>
     <title>DASH</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="http://kenwheeler.github.io/slick/slick/slick-theme.css">
+    <script src="js\jquery-3.5.1.js" charset="utf-8"></script>
+    <script src="js\caru.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <!-- <div class="overlay"></div> -->
     <div class="wrap">
       <div class="header">
         <div class="name"></div>
-        <div class="colour"></div>
+        <div class="colour">
+          <img src="imgs/bucket.svg">
+        </div>
       </div>
       <div class="weather"></div>
       <div class="control"></div>
       <div class="ship"></div>
-      <div class="ads"></div>
+      <div class="ads">
+        <div class="close">
+          <div class="close-l"></div>
+          <div class="close-r"></div>
+        </div>
+        <div class="ads-over blocker">
+          <h1>!</h1>
+          <h2>ошибка</h2>
+          <p>недостаточно прав</p>
+        </div>
+        <div class="ads-c">
+          <div><img src="imgs/plants.png"></div>
+          <div><img src="imgs/cola.png"></div>
+          <div><img src="imgs/ship.png"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

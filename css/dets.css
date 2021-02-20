@@ -1,0 +1,70 @@
+.slick-dots{
+  top:570px;
+  position: absolute;
+  display: block;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li button:before {
+  color:#fff !important;
+}
+.close{
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  margin-top: 20px;
+  margin-left: 110px;
+}
+.close-l{
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  transform: rotate(45deg);
+}
+.close-r{
+  position: absolute;
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  transform: rotate(-45deg);
+}
+.ads-over{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #000;
+}
+.ads-over h1{
+  width: 142px;
+  height: 113px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 96px;
+  text-align: center;
+  padding-top: 230px;
+}
+.ads-over h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  width: 142px;
+  height: 21px;
+  text-align: center;
+  margin-top: -15px;
+}
+.ads-over p{
+  width: 142px;
+  height: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 190px;
+}
+.colour img{
+  margin: 12px;
+}

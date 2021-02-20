@@ -1,3 +1,6 @@
+body{
+  background-color: #000;
+}
 .wrap{
   display: grid;
   position: absolute;
@@ -12,7 +15,11 @@
   transform: translate(-50%, -50%);
 }
 div{
-  border: 2px solid green;
+  /* border: 2px solid green; */
+}
+div img{
+  pointer-events: none;
+  border: none;
 }
 .header{
   display: flex;
@@ -26,6 +33,12 @@ div{
 .colour{
   width: 47px;
   height: 47px;
+  width: 47px;
+  height: 47px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(4px);
+  border-radius: 100px;
 }
 .weather{
   width: 550px;
@@ -40,13 +53,18 @@ div{
   grid-row: 2 / span 2;
 }
 .ads{
+  border-radius: 10px;
   width: 142px;
   height: 600px;
   grid-column: 3;
   grid-row: 2 / span 2;
+  overflow: hidden;
 }
 .control{
   width: 550px;
   height: 266px;
   grid-column: 1 / span 1;
+}
+.blocker{
+  display: none;
 }
