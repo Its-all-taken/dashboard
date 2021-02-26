@@ -33,7 +33,6 @@ $(".colour").click(function (){
   }
 });
 
-
 $(document).ready(function(){
   jQuery.getJSON('https://api.openweathermap.org/data/2.5/weather?units=metric&lang=ru&id=524901&appid=061f24cf3cde2f60644a8240302983f2', function(data) {
       temp = data.main.temp.toFixed(0);
@@ -42,12 +41,14 @@ $(document).ready(function(){
       clouds = data.clouds.all;
       humidity = data.main.humidity ? Math.round(data.main.humidity) : "N/A ";
       windSpeed = data.wind.speed ? (data.wind.speed * 3.6).toFixed(0) : "N/A ";
+      icon = data.weather.main
 
       $("#temperature").text(temp);
       $("#status").text(status[0].toUpperCase() + status.slice(1));
       $("#clouds").text(clouds + " %");
       $("#humidity").text(humidity + " %");
       $("#windSpeed").text(windSpeed + " метров/сек");
+      // $(".weather-bg").id(icon);
     });
 });
 //не работает

@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
     <script src="js\jquery-3.5.1.js" charset="utf-8"></script>
     <script src="js\caru.js" charset="utf-8"></script>
+    <script src="js\weather.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
@@ -17,6 +19,7 @@
       <div class="header">
         <div class="name">
           <h1>Добро пожаловать,</h1>
+          <span id="username"></span>
         </div>
         <div class="colour">
           <img src="imgs/bucket.svg">
@@ -42,6 +45,10 @@
           <p>влажность</p>
           <span id="humidity"></span>
         </div>
+        <div class="weather-bg" id="Snow" style="display:none;"></div>
+        <div class="weather-bg" id="Rain" style="display:none;"></div>
+        <div class="weather-bg" id="Drizzle" style="display:none;"></div>
+        <div class="weather-bg" id="Clear"></div>
       </div>
       <div class="control"></div>
       <div class="ship">
@@ -64,5 +71,6 @@
         </div>
       </div>
     </div>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </body>
 </html>
