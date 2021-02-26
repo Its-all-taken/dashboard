@@ -108,6 +108,7 @@
   background: rgba(255, 255, 255, 0.09);
   backdrop-filter: blur(4px);
   border-radius: 0px 10px 10px 0px;
+  z-index: 3;
 }
 .weather-side p{
   font-family: 'Roboto', sans-serif;
@@ -136,30 +137,41 @@
   background-color: #FFF;
 }
 .ch-w-side{
+  cursor: pointer;
   color: #fff;
   left: 509px;
   top: 17px;
+  z-index: 2;
 }
 .gg-chevron-left {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs,1));
-    width: 24px;
-    height: 24px;
-    border: 2px solid transparent;
-    border-radius: 100px
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 24px;
+  height: 24px;
+  border: 2px solid transparent;
+  border-radius: 100px
 }
 .gg-chevron-left::after {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-bottom: 3px solid;
-    border-left: 3px solid;
-    transform: rotate(45deg);
-    left: 6px;
-    top: 4px
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-bottom: 3px solid;
+  border-left: 3px solid;
+  transform: rotate(45deg);
+  left: 6px;
+  top: 4px
+}
+.weather-bg{
+  position: absolute;
+  width: 550px;
+  height: 305px;
+  z-index: 1;
+}
+#particles-js{
+  background-color: #11ffee00;
 }
