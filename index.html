@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://kenwheeler.github.io/slick/slick/slick-theme.css">
     <script src="js\jquery-3.5.1.js" charset="utf-8"></script>
+    <script src="js/particles.js"></script>
     <script src="js\weather.js" charset="utf-8"></script>
     <script src="js\caru.js" charset="utf-8"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -48,7 +49,13 @@
         <div class="weather-bg" id="Rain"></div>
         <div class="weather-bg" id="Drizzle"></div>
         <div class="weather-bg" id="Clear"></div>
-        <div class="weather-bg" id="Clouds"></div>
+        <div class="weather-bg" id="Clouds">
+          <clippath id="clip" >
+            <circle cx="50" cy="50" r="50" class="a"/>
+          </clippath>
+          <div class="clou"></div>
+          <div class="clou" clip-path="url(#clip)"></div>
+        </div>
       </div>
       <div class="control"></div>
       <div class="ship">
@@ -71,6 +78,5 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </body>
 </html>
