@@ -51,6 +51,7 @@ div img{
   background: rgba(255, 255, 255, 0.09);
   color: white;
   border-radius: 10px;
+  overflow: hidden;
 }
 .ship{
   width: 343px;
@@ -77,4 +78,7 @@ div img{
 }
 .blocker{
   display: none;
+}
+.unblocker{
+  display: block;
 }

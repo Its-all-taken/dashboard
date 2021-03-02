@@ -5,57 +5,61 @@ $(document).ready(function(){
     dots: true
   });
 
-$(".close-a").click(function (){
+  $(".close-a").click(function (){
         $(".ads-over").toggleClass("blocker")
       })
 
-$(".ch-w-side").click(function (){
+  $(".ch-w-side").click(function (){
     $(".weather-side").toggleClass("blocker")
     })
 
-$(".close-w").click(function (){
+  $(".close-w").click(function (){
     $(".weather-side").toggleClass("blocker")
     })
 
-$(".colour").click(function (){
+  $(".colour").click(function (){
   let bgColor= ["#000", "#8248CB", "#487CCB", "#CB7F48", "#507E14"];
-  let random_color = bgColor[Math.floor(Math.random()*bgColor.length)];
+  let ranColor = bgColor[Math.floor(Math.random()*bgColor.length)];
   $(".colour").click(function(i,val){
-    $("body").css("background-color",random_color);
+    $("body").css("background-color",ranColor);
     })
   });
+});
 
-  let unit = "C";
+$(document).ready(function(){
   function getLocation() {
       $.get("https://ipapi.co/json", function(data) {
           getWeather(data.city);
       });
-  }
-});
-
-$(document).ready(function(){
+    }
   jQuery.getJSON('https://api.openweathermap.org/data/2.5/weather?units=metric&lang=ru&id=524901&appid=061f24cf3cde2f60644a8240302983f2', function(data) {
       temp = data.main.temp.toFixed(0);
       status = data.weather[0].description;
-      iconId = data.weather[0].id;
+      icon = data.weather[0].icon;
       clouds = data.clouds.all;
       humidity = data.main.humidity ? Math.round(data.main.humidity) : "N/A ";
       windSpeed = data.wind.speed ? (data.wind.speed * 3.6).toFixed(0) : "N/A ";
-      icon = data.weather.main
 
       $("#temperature").text(temp);
       $("#status").text(status[0].toUpperCase() + status.slice(1));
       $("#clouds").text(clouds + " %");
       $("#humidity").text(humidity + " %");
-      $("#windSpeed").text(windSpeed + " метров/сек");
-      // $(".weather-bg").id(icon);
+      $("#windSpeed").text(windSpeed + " метр/сек");
+
+      if (icon === '01d' || icon === '01n'){
+        $("#Clear").css('display', 'block')
+      }
+      else if (icon === '10d' || icon === '10n'){
+        $("#Drizzle").css('display', 'block')
+      }
+      else if (icon === '11d' || icon === '11n'){
+        $("#Rain").css('display', 'block')
+      }
+      else if (icon === '13d' || icon === '13n'){
+        $("#Snow").css('display', 'block')
+      }
+      else if (icon === '02d' || icon === '02n' || icon === '03d' || icon === '03n' || icon === '04d' || icon === '04n'){
+        $("#Clouds").css('display', 'block')
+      }
     });
 });
-//не работает
-// $(".colour").click(function (){
-//   let bgColor = ["#000", "#8248CB", "#487CCB", "#CB7F48", "#507E14"];
-//   $.each(bgColor, function(index, value){
-//     $("body").css("background-color", value)
-//   })
-// });
-//не работает
