@@ -167,7 +167,8 @@
   top: 4px
 }
 .weather-bg{
-  display: none;
+  /* display: none; */
+  visibility: hidden;
   position: absolute;
   width: 550px;
   height: 305px;

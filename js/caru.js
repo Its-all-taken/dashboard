@@ -47,23 +47,19 @@ $(document).ready(function(){
       $("#windSpeed").text(windSpeed + " метр/сек");
 
       if (icon === '01d' || icon === '01n'){
-        $("#Clear").css('display', 'block')
+        $("#Clear").css('visibility', 'visible')
       }
       else if (icon === '10d' || icon === '10n'){
-        $("#Drizzle").css('display', 'block')
+        $("#Drizzle").css('visibility', 'visible')
       }
       else if (icon === '11d' || icon === '11n'){
-        $("#Rain").css('display', 'block')
+        $("#Rain").css('visibility', 'visible')
       }
       else if (icon === '13d' || icon === '13n'){
-        $("#Snow").css('display', 'block')
+        $("#Snow").css('visibility', 'visible')
       }
       else if (icon === '02d' || icon === '02n' || icon === '03d' || icon === '03n' || icon === '04d' || icon === '04n'){
-        $("#Clouds").css('display', 'block')
+        $("#Clouds").css('visibility', 'visible')
       }
     });
 });
-$('svg').on('mousemove',function(e){
-    $('.a').attr('cx',e.pageX).attr('cy',e.pageY)
-
-})
