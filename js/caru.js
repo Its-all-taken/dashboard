@@ -48,18 +48,38 @@ $(document).ready(function(){
 
       if (icon === '01d' || icon === '01n'){
         $("#Clear").css('visibility', 'visible')
+        $("#Drizzle").css('display', 'none')
+        $("#Rain").css('display', 'none')
+        $("#Snow").css('display', 'none')
+        $("#Clouds").css('display', 'none')
       }
       else if (icon === '10d' || icon === '10n'){
         $("#Drizzle").css('visibility', 'visible')
+        $("#Rain").css('display', 'none')
+        $("#Snow").css('display', 'none')
+        $("#Clouds").css('display', 'none')
+        $("#Clear").css('display', 'none')
       }
       else if (icon === '11d' || icon === '11n'){
         $("#Rain").css('visibility', 'visible')
+        $("#Drizzle").css('display', 'none')
+        $("#Snow").css('display', 'none')
+        $("#Clouds").css('display', 'none')
+        $("#Clear").css('display', 'none')
       }
       else if (icon === '13d' || icon === '13n'){
         $("#Snow").css('visibility', 'visible')
+        $("#Rain").css('display', 'none')
+        $("#Drizzle").css('display', 'none')
+        $("#Clouds").css('display', 'none')
+        $("#Clear").css('display', 'none')
       }
       else if (icon === '02d' || icon === '02n' || icon === '03d' || icon === '03n' || icon === '04d' || icon === '04n'){
         $("#Clouds").css('visibility', 'visible')
+        $("#Clear").css('display', 'none')
+        $("#Rain").css('display', 'none')
+        $("#Drizzle").css('display', 'none')
+        $("#Snow").css('display', 'none')
       }
     });
 });
