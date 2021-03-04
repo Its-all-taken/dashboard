@@ -185,3 +185,87 @@
 #particles-js{
   background-color: #11ffee00;
 }
+svg{
+  width: 80%;
+  height: auto;
+  margin-top: 3vh;
+  margin-left: 2.5vw;
+}
+.buttons{
+  margin-top: 65px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: .2fr .2fr;
+  grid-template-rows: .5fr .1fr;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 50px;
+  justify-items: center;
+}
+.button-r{
+  width: 50px;
+  height: 50px;
+  background: #EEEEEE;
+  box-shadow: inset 2px 3px 4px rgba(255, 255, 255, 0.25), inset -2px -3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  font-family: 'icomoon' !important;
+  line-height: 1;
+  position: relative;
+}
+.button-r:hover{
+  box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.25), inset 1px -3px 6px rgba(0, 0, 0, 0.1);
+}
+.button-s{
+  width: 65px;
+  height: 30px;
+  background: #EEEEEE;
+  box-shadow: inset 2px 3px 4px rgba(255, 255, 255, 0.25), inset -2px -3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-family: 'icomoon' !important;
+  line-height: 1;
+  position: relative;
+}
+.button-s:hover{
+  box-shadow: inset 2px 3px 4px rgba(0, 0, 0, 0.25), inset 1px -3px 6px rgba(0, 0, 0, 0.1);
+}
+.levers{
+  width: 275px;
+  height: 266px;
+  background: rgba(255, 255, 255, 0.09);
+}
+.control p{
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: white;
+  position: absolute;
+}
+.met:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "\e903";
+}
+.sn:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "\e900";
+}
+.sit:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "\e901";
+}
+.lig:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "\e902";
+}
