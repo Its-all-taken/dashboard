@@ -176,6 +176,11 @@ svg{
   height: 266px;
   background: rgba(255, 255, 255, 0.09);
 }
+.lever{
+  margin: 50px;
+  width: 20px;
+  height: 134px;
+}
 .control p{
   margin: 10px;
   font-family: 'Roboto', sans-serif;
@@ -282,7 +287,7 @@ svg{
   border-radius: 10px;
 }
 .l-bar{
-  margin-top: -80px;
+  margin-top: -50px;
   margin-left: 5px;
   background: #C4C4C4;
   width: 10px;
@@ -293,4 +298,10 @@ svg{
   height: 134px;
   background: #494949;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.l-top{
+  margin-top: -13px;
+}
+.l-bottom{
+
 }
