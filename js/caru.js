@@ -46,7 +46,7 @@ $(document).ready(function(){
       $("#humidity").text(humidity + " %");
       $("#windSpeed").text(windSpeed + " метр/сек");
 
-      if (icon === '01d' || icon === '01n'){
+      if (icon === '01d' || icon === '01n' || icon === '02d' || icon === '02n' || icon === '03d' || icon === '03n' || icon === '04d' || icon === '04n'){
         $("#Clear").css('visibility', 'visible')
         $("#Drizzle").css('display', 'none')
         $("#Rain").css('display', 'none')
@@ -74,12 +74,12 @@ $(document).ready(function(){
         $("#Clouds").css('display', 'none')
         $("#Clear").css('display', 'none')
       }
-      else if (icon === '02d' || icon === '02n' || icon === '03d' || icon === '03n' || icon === '04d' || icon === '04n'){
-        $("#Clouds").css('visibility', 'visible')
-        $("#Clear").css('display', 'none')
-        $("#Rain").css('display', 'none')
-        $("#Drizzle").css('display', 'none')
-        $("#Snow").css('display', 'none')
-      }
+      // else if (icon === '02d' || icon === '02n' || icon === '03d' || icon === '03n' || icon === '04d' || icon === '04n'){
+      //   $("#Clouds").css('visibility', 'visible')
+      //   $("#Clear").css('display', 'none')
+      //   $("#Rain").css('display', 'none')
+      //   $("#Drizzle").css('display', 'none')
+      //   $("#Snow").css('display', 'none')
+      // }
     });
 });
