@@ -6,15 +6,17 @@ $(document).ready(function(){
   });
 
   $(".close-a").click(function (){
-        $(".ads-over").toggleClass("blocker")
-      })
+      $(".ads-over").toggleClass("blocker")
+    })
 
-  $(".ch-w-side").click(function (){
+  $(".chevron").click(function (){
     $(".weather-side").toggleClass("blocker")
+    $(".chevron").hide();
     })
 
   $(".close-w").click(function (){
     $(".weather-side").toggleClass("blocker")
+    $(".chevron").show();
     })
 
   $(".colour").click(function (){

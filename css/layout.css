@@ -18,10 +18,6 @@ body{
 div{
   /* border: 2px solid green; */
 }
-div img{
-  pointer-events: none;
-  border: none;
-}
 .header{
   display: flex;
   justify-content: space-between;
