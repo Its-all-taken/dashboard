@@ -177,7 +177,7 @@ svg{
   background: rgba(255, 255, 255, 0.09);
 }
 .lever{
-  margin: 50px;
+  /* margin: 50px; */
   width: 20px;
   height: 134px;
 }
@@ -291,7 +291,7 @@ svg{
   margin-left: 5px;
   background: #C4C4C4;
   width: 10px;
-  height: 44px;
+  height: 10px;
 }
 .l-hole{
   width: 20px;
@@ -299,9 +299,15 @@ svg{
   background: #494949;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.l-top{
-  margin-top: -13px;
+.l-t{
+  display: inline-grid;
+  row-gap: 10px;
 }
-.l-bottom{
-
+h2{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
 }

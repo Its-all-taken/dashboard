@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
   $('.ads-c').slick({
     autoplay:true,
@@ -92,15 +93,12 @@ $( function() {
   function position() {
     $( ".l-bar" ).position({
       of: $( ".l-hand" ),
-      my: $( "#my_horizontal" ).val() + " " + $( "#my_vertical" ).val(),
-      at: $( "#at_horizontal" ).val() + " " + $( "#at_vertical" ).val(),
-      collision: $( "#collision_horizontal" ).val() + " " + $( "#collision_vertical" ).val()
+      my: "center bottom",
+      at: "center top",
+      collision: "flip"
+      containment: ".lever"
     });
   }
-
-  $( ".positionable" ).css( "opacity", 0.5 );
-
-  $( "select, input" ).on( "click keyup change", position );
 
   $( ".l-hand" ).draggable({
     drag: position
