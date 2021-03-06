@@ -96,7 +96,6 @@ $( function() {
       my: "center bottom",
       at: "center top",
       collision: "flip"
-      containment: ".lever"
     });
   }
 
