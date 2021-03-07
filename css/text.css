@@ -55,7 +55,6 @@ h2{
 }
 #status{
   margin-top: 1.25vh;
-  width: 0.833vw;
   text-transform: lowercase;
   overflow-wrap: break-word;
   font-family: 'Roboto', sans-serif;

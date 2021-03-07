@@ -19,7 +19,7 @@
   margin: 12px;
 }
 .weather-main{
-  width: 16.667vw;
+  width: 25vw;
   position: fixed;
   margin-top: 17px;
   margin-left: 17px;
@@ -226,7 +226,15 @@ svg{
   display: inline-grid;
   row-gap: 10px;
 }
-
+.ship-svg{
+  fill:#fff;
+}
+.ship-svg-ice{
+  fill: url(#ice);
+}
+.ship-svg-fire{
+  fill: url(#fire);
+}
 
 /* фикс карусели */
 .ads img {

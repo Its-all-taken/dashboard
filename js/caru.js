@@ -29,6 +29,18 @@ $(document).ready(function(){
     $(".glow").addClass("blocker")
     })
 
+  $(".sn").click(function (){
+    $(".ship-svg").toggleClass("ship-svg-fire")
+    $(".ship-svg").removeClass("ship-svg-ice")
+    })
+
+  $(".met").click(function (){
+    $(".ship-svg").toggleClass("ship-svg-ice")
+    $(".ship-svg").removeClass("ship-svg-fire")
+    })
+
+
+
   $(".colour").click(function (){
   let bgColor= ["#000", "#8248CB", "#487CCB", "#CB7F48", "#507E14"];
   let ranColor = bgColor[Math.floor(Math.random()*bgColor.length)];
