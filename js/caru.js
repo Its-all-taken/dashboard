@@ -5,7 +5,7 @@ $(document).ready(function(){
     autoplaySpeed: 5000,
     dots: true
   });
-
+  
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")
     })

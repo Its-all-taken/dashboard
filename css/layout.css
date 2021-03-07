@@ -9,8 +9,9 @@ body{
   grid-template-rows: .1fr .2fr .2fr;
   column-gap: 44px;
   row-gap: 25px;
-  width: 1135px;
-  height: 685px;
+  width: 93.583vw;
+  height: 85.625vh;
+  /* margin: 3vh 3vw 3vh 3vw; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -24,13 +25,11 @@ div{
   grid-column: auto / span 3;
 }
 .name{
-  width: 928px;
-  height: 47px;
+  width: 77.333vw;
+  height: 5.875vh;
 }
 .colour{
   cursor: pointer;
-  width: 47px;
-  height: 47px;
   width: 47px;
   height: 47px;
   background: rgba(255, 255, 255, 0.1);
@@ -40,8 +39,8 @@ div{
 }
 .weather{
   display: flex;
-  width: 550px;
-  height: 305px;
+  width: 45.833vw;
+  height: 38.125vh;
   grid-column: 1 / span 2;;
   grid-row: 2;
   background: rgba(255, 255, 255, 0.09);
@@ -50,8 +49,8 @@ div{
   overflow: hidden;
 }
 .ship{
-  width: 343px;
-  height: 600px;
+  width: 28.583vw;
+  height: 76vh;
   grid-column: 2;
   grid-row: 2 / span 2;
   background: rgba(255, 255, 255, 0.09);
@@ -59,20 +58,25 @@ div{
 }
 .ads{
   border-radius: 10px;
-  width: 142px;
-  height: 600px;
+  width: 11.833vw;
+  height: 76vh;
   grid-column: 3;
   grid-row: 2 / span 2;
   overflow: hidden;
 }
 .control{
-  width: 550px;
-  height: 266px;
+  width: 45.833vw;
+  height: 35.25vh;
   grid-column: 1 / span 1;
   background: rgba(255, 255, 255, 0.09);
   border-radius: 10px;
   display: flex;
   overflow: hidden;
+}
+.ads-c img{
+  width: 12vw;
+  height: 76vh;
+  object-fit: cover;
 }
 .blocker{
   display: none;
