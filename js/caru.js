@@ -1,11 +1,10 @@
-
 $(document).ready(function(){
   $('.ads-c').slick({
     autoplay:true,
     autoplaySpeed: 5000,
     dots: true
   });
-  
+
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")
     })
@@ -18,6 +17,16 @@ $(document).ready(function(){
   $(".close-w").click(function (){
     $(".weather-side").toggleClass("blocker")
     $(".chevron").show();
+    })
+
+  $(".lig").click(function (){
+    $(".glow").toggleClass("blocker")
+    $(".heat").addClass("blocker")
+    })
+
+  $(".sit").click(function (){
+    $(".heat").toggleClass("blocker")
+    $(".glow").addClass("blocker")
     })
 
   $(".colour").click(function (){
