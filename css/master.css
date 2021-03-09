@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "responsive.css";
+@import "jquery-ui.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 @import "layout.css";
 @import "text.css";

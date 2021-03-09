@@ -133,22 +133,34 @@ $(document).ready(function(){
       }
     });
 });
-$( function() {
-$( ".l-hand" ).draggable({ containment: ".lever", axis: "y", scroll: false});
-} );
-$( function() {
-  function position() {
-    $( ".l-bar" ).position({
-      of: $( ".l-hand" ),
-      my: "center bottom",
-      at: "center top",
-      collision: "flip"
-    });
-  }
+// $( function() {
+// $( ".l-hand" ).draggable({ containment: ".lever", axis: "y", scroll: false});
+// } );
+// $( function() {
+//   function position() {
+//     $( ".l-bar" ).position({
+//       of: $( ".l-hand" ),
+//       my: "center bottom",
+//       at: "center top",
+//       collision: "flip"
+//     });
+//   }
+//
+//   $( ".l-hand" ).draggable({
+//     drag: position
+//   });
+//
+//   position();
+//
+// } );
+$("#slider").slider(
+{
+            orientation: "vertical",
+            value: "100",
+            slide: function( event, ui ) {
+                $( "#slider-value" ).html( ui.value );
+            }
+}
+);
 
-  $( ".l-hand" ).draggable({
-    drag: position
-  });
-
-  position();
-} );
+$( "#slider-value" ).html(  $('#slider').slider('value') );
