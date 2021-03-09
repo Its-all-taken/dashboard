@@ -1,0 +1,91 @@
+h2{
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.ads-over h1{
+  width: 11.833vw;
+  height: 14.125vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 8vw;
+  text-align: center;
+  padding-top: 230px;
+}
+.ads-over h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #000;
+  font-size: 1.500vw;
+  width: 11.833vw;
+  height: 1.750vw;
+  text-align: center;
+  /* margin-top: -1.250vw; */
+}
+.ads-over p{
+  width: 11.833vw;
+  height: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.167vw;
+  text-align: center;
+  margin-top: 190px;
+}
+.name h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 3vw;
+  color: #fff;
+}
+.ship h1{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 2vw;
+  color: #fff;
+  margin: 20px;
+}
+#temperature, #unit{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 5.333vw;
+  color: #fff;
+}
+#status{
+  margin-top: 1.25vh;
+  text-transform: lowercase;
+  overflow-wrap: break-word;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  line-height: 26px;
+  font-size: 2vw;
+  color: #fff;
+}
+.weather-side p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2vw;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+.weather-side p:first-of-type{
+  margin-top: 20px;
+}
+.weather-side span{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+  color: #FFFFFF;
+}
+.weather-side span, .weather-side p{
+  margin-left: 30px;
+}
+.control p{
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: white;
+  position: absolute;
+}

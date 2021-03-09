@@ -1,11 +1,10 @@
-
 $(document).ready(function(){
   $('.ads-c').slick({
     autoplay:true,
     autoplaySpeed: 5000,
     dots: true
   });
-  
+
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")
     })
@@ -18,6 +17,26 @@ $(document).ready(function(){
   $(".close-w").click(function (){
     $(".weather-side").toggleClass("blocker")
     $(".chevron").show();
+    })
+
+  $(".lig").click(function (){
+    $(".glow").toggleClass("blocker")
+    $(".heat").addClass("blocker")
+    })
+
+  $(".sit").click(function (){
+    $(".heat").toggleClass("blocker")
+    $(".glow").addClass("blocker")
+    })
+
+  $(".sn").click(function (){
+    $(".ship-svg").toggleClass("ship-svg-fire")
+    $(".ship-svg").removeClass("ship-svg-ice")
+    })
+
+  $(".met").click(function (){
+    $(".ship-svg").toggleClass("ship-svg-ice")
+    $(".ship-svg").removeClass("ship-svg-fire")
     })
 
   $(".colour").click(function (){
@@ -55,6 +74,8 @@ $(document).ready(function(){
         $("#Rain").css('display', 'none')
         $("#Snow").css('display', 'none')
         $("#Clouds").css('display', 'none')
+        $("#Clouds-heavy").css('display', 'none')
+        $("#Clouds-light").css('display', 'none')
       }
       else if (icon === '10d' || icon === '10n'){
         $("#Drizzle").css('visibility', 'visible')
@@ -62,6 +83,8 @@ $(document).ready(function(){
         $("#Snow").css('display', 'none')
         $("#Clouds").css('display', 'none')
         $("#Clear").css('display', 'none')
+        $("#Clouds-heavy").css('display', 'none')
+        $("#Clouds-light").css('display', 'none')
       }
       else if (icon === '11d' || icon === '11n'){
         $("#Rain").css('visibility', 'visible')
@@ -69,6 +92,8 @@ $(document).ready(function(){
         $("#Snow").css('display', 'none')
         $("#Clouds").css('display', 'none')
         $("#Clear").css('display', 'none')
+        $("#Clouds-heavy").css('display', 'none')
+        $("#Clouds-light").css('display', 'none')
       }
       else if (icon === '13d' || icon === '13n'){
         $("#Snow").css('visibility', 'visible')
@@ -76,13 +101,35 @@ $(document).ready(function(){
         $("#Drizzle").css('display', 'none')
         $("#Clouds").css('display', 'none')
         $("#Clear").css('display', 'none')
+        $("#Clouds-heavy").css('display', 'none')
+        $("#Clouds-light").css('display', 'none')
       }
-      else if (icon === '02d' || icon === '02n' || icon === '03d' || icon === '03n' || icon === '04d' || icon === '04n'){
+      else if (icon === '02d' || icon === '02n'){
         $("#Clouds").css('visibility', 'visible')
         $("#Clear").css('display', 'none')
         $("#Rain").css('display', 'none')
         $("#Drizzle").css('display', 'none')
         $("#Snow").css('display', 'none')
+        $("#Clouds-heavy").css('display', 'none')
+        $("#Clouds-light").css('display', 'none')
+      }
+      else if (icon === '03d' || icon === '03n'){
+        $("#Clouds-light").css('visibility', 'visible')
+        $("#Clouds").css('display', 'none')
+        $("#Clear").css('display', 'none')
+        $("#Rain").css('display', 'none')
+        $("#Drizzle").css('display', 'none')
+        $("#Snow").css('display', 'none')
+        $("#Clouds-heavy").css('display', 'none')
+      }
+      else if (icon === '04d' || icon === '04n'){
+        $("#Clouds-heavy").css('visibility', 'visible')
+        $("#Clouds").css('display', 'none')
+        $("#Clear").css('display', 'none')
+        $("#Rain").css('display', 'none')
+        $("#Drizzle").css('display', 'none')
+        $("#Snow").css('display', 'none')
+        $("#Clouds-light").css('display', 'none')
       }
     });
 });

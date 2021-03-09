@@ -15,68 +15,11 @@
   background-color: #fff;
   color: #000;
 }
-.ads-over h1{
-  width: 11.833vw;
-  height: 14.125vh;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 8vw;
-  text-align: center;
-  padding-top: 230px;
-}
-.ads-over h2{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 1.500vw;
-  width: 11.833vw;
-  height: 1.750vw;
-  text-align: center;
-  margin-top: -1.250vw;
-}
-.ads-over p{
-  width: 11.833vw;
-  height: 16px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 1.167vw;
-  text-align: center;
-  margin-top: 190px;
-}
 .colour img{
   margin: 12px;
 }
-.name h1{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 3vw;
-  color: #fff;
-}
-.ship h1{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 2vw;
-  color: #fff;
-  margin: 20px;
-}
-#temperature, #unit{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  font-size: 5.333vw;
-  color: #fff;
-}
-#status{
-  margin-top: 1.25vh;
-  width: 0.833vw;
-  text-transform: lowercase;
-  overflow-wrap: break-word;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  line-height: 26px;
-  font-size: 2vw;
-  color: #fff;
-}
 .weather-main{
-  width: 16.667vw;
+  width: 25vw;
   position: fixed;
   margin-top: 17px;
   margin-left: 17px;
@@ -90,25 +33,6 @@
   backdrop-filter: blur(4px);
   border-radius: 0px 10px 10px 0px;
   z-index: 3;
-}
-.weather-side p{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 2vw;
-  color: #FFFFFF;
-  margin-top: 20px;
-}
-.weather-side p:first-of-type{
-  margin-top: 20px;
-}
-.weather-side span{
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 2vw;
-  color: #FFFFFF;
-}
-.weather-side span, .weather-side p{
-  margin-left: 30px;
 }
 .weather-bg{
   /* display: none; */
@@ -130,10 +54,12 @@
   background-color: #11ffee00;
 }
 svg{
+  position: relative;
   width: 23.333vw;
   max-height: 58vh;
-  margin-top: 3vh;
-  margin-left: 2.5vw;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .buttons{
   margin: 10vh auto;
@@ -146,24 +72,30 @@ svg{
   justify-items: center;
 }
 .button-r{
-  width: 50px;
-  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  width: 4.167vw;
+  height: 4.167vw;
+  max-width: 90px;
+  max-height: 90px;
   background: #EEEEEE;
   box-shadow: inset 2px 3px 4px rgba(255, 255, 255, 0.25), inset -2px -3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 100px;
   font-family: 'icomoon' !important;
   line-height: 1;
+  font-size: calc(8px + .8vw);
   position: relative;
 }
 .button-s{
-  width: 65px;
-  height: 30px;
+  width: 5.417vw;
+  height: 2.500vw;
   background: #EEEEEE;
   box-shadow: inset 2px 3px 4px rgba(255, 255, 255, 0.25), inset -2px -3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   font-family: 'icomoon' !important;
   line-height: 1;
   position: relative;
+  font-size: calc(8px + .8vw);
 }
 .button:hover{
   color: #55AA2D;
@@ -179,13 +111,6 @@ svg{
   width: 20px;
   height: 134px;
 }
-.control p{
-  margin: 10px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  color: white;
-  position: absolute;
-}
 .met:before {
   position: absolute;
   top: 50%;
@@ -195,8 +120,8 @@ svg{
 }
 .sn:before {
   position: absolute;
-  top: 53%;
-  left: 51%;
+  top: 52%;
+  left: 49%;
   transform: translate(-50%, -50%);
   content: "\e900";
 }
@@ -301,18 +226,20 @@ svg{
   display: inline-grid;
   row-gap: 10px;
 }
-h2{
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: #FFFFFF;
+.ship-svg{
+  fill:#fff;
 }
+.ship-svg-ice{
+  fill: url(#ice);
+}
+.ship-svg-fire{
+  fill: url(#fire);
+}
+
+/* фикс карусели */
 .ads img {
   margin: 0 27px;
 }
-/* the parent */
 .ads-c {
   margin: 0 -27px;
 }

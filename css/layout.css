@@ -2,6 +2,28 @@ body{
   user-select: none;
   background-color: #000;
 }
+.glow{
+  background: radial-gradient(77.25% 77.25% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+  opacity: 0.2;
+  width: 100vw;
+  height: 100vh;
+  transition: .2s ease-out;
+}
+.glow:hover{
+  background: radial-gradient(77.25% 77.25% at 50% 50%, rgba(255, 255, 255, 0) 0%, #FFBDBD 100%);
+  opacity: 0.1;
+}
+.heat{
+  background: radial-gradient(77.25% 77.25% at 50% 50%, rgba(207, 131, 41, 0) 0%, #CF8329 100%);
+  opacity: 0.2;
+  width: 100vw;
+  height: 100vh;
+  transition: .8s ease-out;
+}
+.heat:hover{
+  background: radial-gradient(77.25% 77.25% at 50% 50%, rgba(207, 141, 41, 0) 0%, #EC683E 100%);
+  opacity: .3;
+}
 .wrap{
   display: grid;
   position: absolute;
