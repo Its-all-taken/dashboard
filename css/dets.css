@@ -220,7 +220,7 @@ svg{
   position: relative;
   cursor: pointer;
   color: #fff;
-  left: 42.917vw;
+  left: 43.4vw;
   top: 17px;
   z-index: 2;
   font-family: 'icomoon' !important;
@@ -250,12 +250,12 @@ svg{
   position: absolute;
   z-index: 2;
   font-size: 30px;
-  margin-left: 9vw;
+  margin-left: 9.5vw;
   margin-top: 0.625vh;
 }
 .close-w{
   font-size: 34px;
-  margin-left: 18.500vw;
+  margin-left: 19vw;
   margin-top: 1.375vh;
 }
 .colour{
