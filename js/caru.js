@@ -153,14 +153,16 @@ $(document).ready(function(){
 //   position();
 //
 // } );
-$("#slider").slider(
-{
-            orientation: "vertical",
-            value: "100",
-            slide: function( event, ui ) {
-                $( "#slider-value" ).html( ui.value );
-            }
-}
-);
+$( function() {
+  var handle = $( "#custom-handle" );
+  $( "#lever" ).slider({
+    orientation: "vertical",
+    // create: function() {
+    //   handle.text( $( this ).slider( "value" ) );
+    // },
+    // slide: function( event, ui ) {
+    //   handle.text( ui.value );
+    // }
+  });
 
-$( "#slider-value" ).html(  $('#slider').slider('value') );
+  } );
