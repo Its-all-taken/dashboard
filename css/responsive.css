@@ -1,5 +1,139 @@
-@media all and (min-width: 1024) and (max-width: 1180px){
-  .weather{
-    /* transform: scale(.5); */
+@media all and (min-width:900px) and (max-width: 1024px){
+  .close-w{
+    margin-left: 18vw;
+    margin-top: 17px;
+  }
+  .chevron{
+    left: 42.5vw;
+    top: 20px;
+  }
+  .close-a{
+    margin-left: 8.5vw;
   }
 }
+/* tablet */
+@media all and (min-width: 320px) and (max-width: 900px){
+  .wrap{
+    top:5%;
+    left:50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: .1fr .5fr 1fr .5fr .7fr;
+    row-gap: 18px;
+    width: 90%;
+    height: auto;
+  }
+  .wrap > *{
+    grid-column: 1;
+  }
+  .header{
+    grid-row: 1;
+  }
+  .name h1{
+    font-size: 4vw;
+  }
+  .weather{
+    width: 100%;
+    height: 26.125vh;
+    grid-row: 2;
+  }
+  .chevron{
+    left: 82.4vw;
+  }
+  .close-w{
+    margin-left: 28vw;
+    margin-top: 1.1vh;
+  }
+  .weather-bg{
+    width: 100%;
+    height: 26.125vh;
+  }
+  .weather-side{
+    height: 26.125vh;
+    width: 34.917vw;
+    left: 52.7vw;
+  }
+  .weather-side p,.weather-side span{
+    font-size: 2.7vw;
+    margin-left: 4.5vw;
+  }
+  #status{
+    font-size: 3vw;
+  }
+  #temperature, #unit{
+    font-size: 7.333vw;
+  }
+  .ship{
+    width: 100%;
+    height: 48.25vh;
+    grid-row: 3;
+  }
+  #ShipBG{
+    width: 100%;
+    height: 48.25vh;
+  }
+  svg{
+    width: 33.333vw;
+  }
+  .control{
+    border-radius: 0px;
+    width: 100%;
+    height: 31.25vh;
+    grid-row: 4;
+  }
+  .buttons{
+    column-gap: 10.167vw;
+  }
+  .levers{
+    width: 34.917vw;
+  }
+  .lever-wrap:first-of-type {
+    margin-left: 10vw;
+}
+  .ads{
+    width: 100%;
+    height: 30vh;
+    grid-row: 5;
+  }
+  .slick-dots {
+    top: 27.5vh;
+  }
+  .ads img{
+    width: 100%;
+    height: 30vh;
+  }
+  .close-a {
+    margin-left: 82vw;
+  }
+  .plants-t {
+    margin-left: 39vw;
+    padding: 0;
+  }
+.plants-t h1{
+  font-size: 19vw;
+  margin-bottom: 9vw;
+}
+.plants-t h2 {
+    font-size: 3.4vw;
+  }
+  .plants-t h3 {
+    font-size: 1.9vw;
+  }
+.cola-t {
+  margin-left: 4vw;
+}
+.cola-t h1{
+  font-size: 6vw;
+}
+.cola-t h2{
+  font-size: 2vw;
+  text-align: left;
+}
+.ship-t h1 {
+    font-size: calc(24px + 8vw);
+    width: 64vw;
+  }
+  .ship-t h2 {
+      font-size: 3vw;
+    }

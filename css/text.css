@@ -32,7 +32,7 @@ h2{
   font-weight: 300;
   font-size: 1.167vw;
   text-align: center;
-  margin-top: 190px;
+  margin-top: 23.75vh;
 }
 .name h1{
   font-family: 'Roboto', sans-serif;
@@ -68,10 +68,10 @@ h2{
   font-weight: 100;
   font-size: 1.7vw;
   color: #FFFFFF;
-  margin-top: 20px;
+  margin-top: 2.5vh;
 }
 .weather-side p:first-of-type{
-  margin-top: 10px;
+  margin-top: 1.25vh;
 }
 .weather-side span{
   font-family: 'Roboto', sans-serif;
@@ -80,7 +80,7 @@ h2{
   color: #FFFFFF;
 }
 .weather-side span, .weather-side p{
-  margin-left: 30px;
+  margin-left: 2.5vw;
 }
 .control p{
   margin: 10px;

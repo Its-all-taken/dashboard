@@ -87,6 +87,8 @@ svg{
   position: relative;
 }
 .button-s{
+  min-width: 60px;
+  min-height: 30px;
   width: 5.417vw;
   height: 2.500vw;
   background: #EEEEEE;
@@ -105,13 +107,13 @@ svg{
   width: 22.917vw;
   height: 35.25vh;
   background: rgba(255, 255, 255, 0.09);
-  display: inline-flex;
-  justify-content: space-around;
+  display: flex;
+  align-items: center;
 }
 .lever{
   /* margin: 50px; */
   width: 20px;
-  height: 134px;
+  /* height: 134px; */
 }
 .met:before {
   position: absolute;
@@ -177,7 +179,7 @@ svg{
   position: absolute;
   z-index: 2;
   font-size: 30px;
-  margin-left: 9.5vw;
+  margin-left: 9vw;
   margin-top: 0.625vh;
 }
 .close-w{
@@ -203,29 +205,25 @@ svg{
   opacity: 1;
 }
 .l-hand{
-  width: 87.43px;
-  height: 16.11px;
+  width: 7.286vw;
+  height: 1.343vw;
   background: #FFFFFF;
   box-shadow: 0px -2px 4px rgba(255, 255, 255, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
-.l-bar{
-  background: #C4C4C4;
-  width: 10px;
-  height: 10px;
-}
 .l-hole{
   margin: 10px auto;
-  width: 20px;
-  height: 134px;
+  width: 1.667vw;
+  height: 11.167vw;
   background: #494949;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .lever-wrap{
-  margin-top: 5.5vh;
+  display: grid;
+  margin-left: 9vw;
 }
 .lever-wrap:first-of-type{
-  margin-left: 0;
+  margin-left: 5vw;
 }
 .ship-svg{
   pointer-events: none;
@@ -316,6 +314,7 @@ svg{
   text-align: left;
   font-size: 1vw;
 }
+
 
 /* фикс карусели */
 .ads img {
