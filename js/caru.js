@@ -165,14 +165,15 @@ $( function() {
         $( "#ShipBG" ).css('opacity', ui.value);
       }
   });
+
   $( "#lever-2" ).slider({
     orientation: "vertical",
     min: 0,
     max: 1,
     step: 0.01,
     slide: function( event, ui ) {
-        $( "#ShipEN" ).css('opacity', ui.value);
-      }
+      $( ".ship-svg-2" ).css('opacity', ui.value);
+    }
   });
-  
-  } );
+
+  });
