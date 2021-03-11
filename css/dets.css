@@ -223,6 +223,7 @@ svg{
   row-gap: 10px;
 }
 .ship-svg{
+  pointer-events: none;
   fill:#fff;
 }
 .ship-svg-ice{
@@ -230,6 +231,25 @@ svg{
 }
 .ship-svg-fire{
   fill: url(#fire);
+}
+#ShipBG{
+  border-radius: 10px;
+  top: -.5vh;
+  width: 28.583vw;
+  height: 76vh;
+  position: absolute;
+  display: block;
+  opacity: 0;
+  /* background: rgba(255, 255, 255, 0.09); */
+}
+#ShipEN{
+  border-radius: 10px;
+  top: -.5vh;
+  width: 28.583vw;
+  height: 76vh;
+  position: absolute;
+  display: block;
+  opacity: 0;
 }
 
 /* фикс карусели */

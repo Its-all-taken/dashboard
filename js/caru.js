@@ -2,7 +2,8 @@ $(document).ready(function(){
   $('.ads-c').slick({
     autoplay:true,
     autoplaySpeed: 5000,
-    dots: true
+    dots: true,
+    arrows : false
   });
 
   $(".close-a").click(function (){
@@ -154,15 +155,24 @@ $(document).ready(function(){
 //
 // } );
 $( function() {
-  var handle = $( "#custom-handle" );
+  let handle = $( "#custom-handle" );
   $( "#lever" ).slider({
     orientation: "vertical",
-    // create: function() {
-    //   handle.text( $( this ).slider( "value" ) );
-    // },
-    // slide: function( event, ui ) {
-    //   handle.text( ui.value );
-    // }
+    min: 0,
+    max: 1,
+    step: 0.01,
+    slide: function( event, ui ) {
+        $( "#ShipBG" ).css('opacity', ui.value);
+      }
   });
-
+  $( "#lever-2" ).slider({
+    orientation: "vertical",
+    min: 0,
+    max: 1,
+    step: 0.01,
+    slide: function( event, ui ) {
+        $( "#ShipEN" ).css('opacity', ui.value);
+      }
+  });
+  
   } );

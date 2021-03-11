@@ -71,12 +71,14 @@ div{
   overflow: hidden;
 }
 .ship{
+  position: relative;
   width: 28.583vw;
   height: 76vh;
   grid-column: 2;
   grid-row: 2 / span 2;
   background: rgba(255, 255, 255, 0.09);
   border-radius: 10px;
+  overflow: hidden;
 }
 .ads{
   border-radius: 10px;
