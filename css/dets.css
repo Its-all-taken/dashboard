@@ -260,6 +260,61 @@ svg{
   opacity: 0;
   /* background: rgba(255, 255, 255, 0.09); */
 }
+.ads-w{
+  position: relative;
+}
+ .ads-t{
+  color: #fff;
+  position: absolute;
+}
+.plants-t{
+  font-family: Noto Sans;
+  text-align: center;
+  padding: 2.5em;
+  bottom: 2em;
+}
+.plants-t h1{
+  top: 0;
+  font-size: 10vw;
+  margin-bottom: 13vw;
+}
+.plants-t h2{
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+.plants-t h3{
+  font-size: .9vw;
+  margin-top: .5em;
+  bottom: 2em;
+}
+.cola-t{
+  padding: 3em;
+}
+.cola-t h1{
+  font-family: Noto Sans;
+  font-weight: bold;
+  font-size: 2vw;
+}
+.cola-t h2{
+  font-family: Roboto;
+  font-size: 1vw;
+  margin-top: .4em;
+}
+.ship-t{
+  padding: 3em;
+  font-family: Roboto;
+  font-weight: bold;
+}
+.ship-t h1{
+  font-size: calc(24px + 3.4vw);
+  word-wrap: break-word;
+  width: 8vw;
+}
+.ship-t h2{
+  margin-top: 1em;
+  text-align: left;
+  font-size: 1vw;
+}
 
 /* фикс карусели */
 .ads img {
