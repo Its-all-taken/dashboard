@@ -233,13 +233,14 @@ svg{
   z-index: 2;
 }
 .ship-svg-2{
+  pointer-events: none;
   opacity: 0;
-  filter: blur(4px);
-  fill:red;
+  filter: blur(5px);
+  fill:#fff;
   position: absolute;
   width: 24vw;
   max-height: 58vh;
-  top: 55%;
+  top: 58%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
