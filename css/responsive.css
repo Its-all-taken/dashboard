@@ -74,7 +74,8 @@
     height: 48.25vh;
   }
   svg{
-    width: 33.333vw;
+    width: 29.333vw;
+    top: 40%;
   }
   .control{
     border-radius: 0px;
