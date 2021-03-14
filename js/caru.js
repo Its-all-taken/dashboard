@@ -1,10 +1,22 @@
 $(document).ready(function(){
   $('.ads-c').slick({
-    autoplay:true,
-    autoplaySpeed: 5000,
+    // autoplay:true,
+    // autoplaySpeed: 5000,
     dots: true,
     arrows : false
   });
+
+  $( ".plants-t" ).position({
+    my: "center",
+    at: "center",
+    of: "#ads-p"
+  });
+
+  // $( ".ship-t" ).position({
+  //   my: "center",
+  //   at: "center",
+  //   of: "#ads-s"
+  // });
 
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")
@@ -136,26 +148,7 @@ $(document).ready(function(){
       }
     });
 });
-// $( function() {
-// $( ".l-hand" ).draggable({ containment: ".lever", axis: "y", scroll: false});
-// } );
-// $( function() {
-//   function position() {
-//     $( ".l-bar" ).position({
-//       of: $( ".l-hand" ),
-//       my: "center bottom",
-//       at: "center top",
-//       collision: "flip"
-//     });
-//   }
-//
-//   $( ".l-hand" ).draggable({
-//     drag: position
-//   });
-//
-//   position();
-//
-// } );
+
 $( function() {
   let handle = $( "#custom-handle" );
   $( "#lever" ).slider({
@@ -177,5 +170,4 @@ $( function() {
       $( ".ship-svg-2" ).css('opacity', ui.value);
     }
   });
-
   });

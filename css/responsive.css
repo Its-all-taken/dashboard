@@ -1,4 +1,4 @@
-@media all and (min-width:900px) and (max-width: 1024px){
+@media all and (min-width:740px) and (max-width: 1024px){
   .close-w{
     margin-left: 18vw;
     margin-top: 17px;
@@ -12,7 +12,7 @@
   }
 }
 /* tablet */
-@media all and (min-width: 320px) and (max-width: 900px){
+@media all and (min-width: 10px) and (max-width: 768px){
   .wrap{
     top:5%;
     left:50%;
@@ -52,7 +52,7 @@
   .weather-side{
     height: 26.125vh;
     width: 34.917vw;
-    left: 52.7vw;
+    left: 53.1vw;
   }
   .weather-side p,.weather-side span{
     font-size: 2.7vw;
@@ -74,7 +74,7 @@
     height: 48.25vh;
   }
   svg{
-    width: 29.333vw;
+    width: 22vh;
     top: 40%;
   }
   .control{
@@ -91,7 +91,7 @@
   }
   .lever-wrap:first-of-type {
     margin-left: 10vw;
-}
+  }
   .ads{
     width: 100%;
     height: 30vh;
@@ -107,34 +107,78 @@
   .close-a {
     margin-left: 82vw;
   }
-  .plants-t {
-    margin-left: 39vw;
-    padding: 0;
+  .plants-t h1{
+    font-size: 19vw;
   }
-.plants-t h1{
-  font-size: 19vw;
-  margin-bottom: 9vw;
-}
-.plants-t h2 {
+  .plants-t h2 {
     font-size: 3.4vw;
   }
   .plants-t h3 {
     font-size: 1.9vw;
   }
-.cola-t {
-  margin-left: 4vw;
-}
-.cola-t h1{
-  font-size: 6vw;
-}
-.cola-t h2{
-  font-size: 2vw;
-  text-align: left;
-}
-.ship-t h1 {
+  .cola-t {
+    margin-left: 4vw;
+  }
+  .cola-t h1{
+    font-size: 6vw;
+  }
+  .cola-t h2{
+    font-size: 2vw;
+    text-align: left;
+  }
+  .ship-t h1 {
     font-size: calc(24px + 8vw);
     width: 64vw;
   }
   .ship-t h2 {
-      font-size: 3vw;
-    }
+    font-size: 3vw;
+  }
+  .ship-t {
+    margin-top: -4vh;
+  }
+  .weather-side p:first-of-type {
+    margin-top: -1vh;
+  }
+  .ui-slider-vertical .ui-slider-handle {
+    left: -2.4vw;
+  }
+  .ship-svg-2{
+    width: 22vh;
+    top: 52%;
+  }
+}
+@media all and (max-width: 550px){
+  .ui-slider-vertical .ui-slider-handle {
+    left: -1.7vw;
+}
+  .levers {
+    width: 35.917vw;
+    height: 32.25vh;
+  }
+  .name h1{
+    font-size: 6vw;
+  }
+  #temperature, #unit {
+    font-size: 12.333vw;
+}
+#status, .weather-side p, .weather-side span {
+    font-size: 4vw;
+}
+.weather-side {
+    width: 43.917vw;
+    left: 46.1vw;
+}
+.close-w {
+    margin-left: 34vw;
+  }
+  .ship h1 {
+    font-size: 5vw;
+  }
+  .ship-t{
+    margin-top: 2vh;
+  }
+  /* .plants-t h1 {
+    font-size: 28vw;
+    margin-bottom: 15vw;
+  } */
+}
