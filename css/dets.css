@@ -1,3 +1,9 @@
+svg{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 .slick-dots{
   top:71.5vh;
   position: absolute;
@@ -226,9 +232,13 @@ svg{
   margin-left: 5vw;
 }
 .ship-svg{
-  pointer-events: none;
+  /* pointer-events: none; */
   fill:#fff;
   z-index: 2;
+}
+.meteo-f{
+  transition: 0.2s;
+  d: path("M 154 0 L 146.4 0 L 73 1 L 127 18.7 L 127 135.3 L 123.7 145.9 Q 46 204 0 301.6 L 0 329.7 L 96.5 231.7 L 96.5 272.6 L 96.5 272.6 L 107.2 292.2 L 107.2 416.9 L 119.6 458.7 L 132 416.9 L 132 292.5 L 137.4 292.5 L 137.4 412.6 L 149.8 459.6 L 162.1 412.6 L 162.1 292.5 L 178.6 292.5 L 153.1 231.4 L 153.7 231.4 L 153.7 209.6 L 279 337 L 279 308.9 Q 216 206 153.7 150.9 L 154 0 L 207 1 L 154 19");
 }
 .ship-svg-2{
   pointer-events: none;

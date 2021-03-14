@@ -37,6 +37,7 @@ $(document).ready(function(){
 
   $(".met").click(function (){
     $(".ship-svg").toggleClass("ship-svg-ice")
+    $(".meteo").toggleClass("meteo-f")
     $(".ship-svg").removeClass("ship-svg-fire")
     })
 
