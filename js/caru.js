@@ -6,18 +6,6 @@ $(document).ready(function(){
     arrows : false
   });
 
-  $( ".plants-t" ).position({
-    my: "center",
-    at: "center",
-    of: "#ads-p"
-  });
-
-  // $( ".ship-t" ).position({
-  //   my: "center",
-  //   at: "center",
-  //   of: "#ads-s"
-  // });
-
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")
     })

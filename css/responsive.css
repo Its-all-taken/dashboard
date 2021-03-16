@@ -39,11 +39,12 @@
     grid-row: 2;
   }
   .chevron{
-    left: 82.4vw;
+    top: 1.5vh;
+    left: 84.4vw;
   }
   .close-w{
-    margin-left: 28vw;
-    margin-top: 1.1vh;
+    padding-top: 1vh;
+    padding-left: 28vw;
   }
   .weather-bg{
     width: 100%;
@@ -52,7 +53,7 @@
   .weather-side{
     height: 26.125vh;
     width: 34.917vw;
-    left: 53.1vw;
+    left: 55.1vw;
   }
   .weather-side p,.weather-side span{
     font-size: 2.7vw;
@@ -107,6 +108,10 @@
   .close-a {
     margin-left: 82vw;
   }
+  .plants-t{
+    top: 15%;
+    left: 20.1%;
+  }
   .plants-t h1{
     font-size: 19vw;
   }
@@ -129,6 +134,7 @@
   .ship-t h1 {
     font-size: calc(24px + 8vw);
     width: 64vw;
+    margin-top: 5vh;
   }
   .ship-t h2 {
     font-size: 3vw;
@@ -146,6 +152,18 @@
     width: 22vh;
     top: 52%;
   }
+  .ads-over h1{
+    font-size: 15vw;
+  }
+  .ads-over h2{
+    font-size: 2.5vw;
+  }
+  .ads-over p{
+    font-size: 2.167vw;
+  }
+  .close-a {
+    padding-left: 1vw;
+}
 }
 @media all and (max-width: 550px){
   .ui-slider-vertical .ui-slider-handle {
@@ -169,7 +187,7 @@
     left: 46.1vw;
 }
 .close-w {
-    margin-left: 34vw;
+    padding-left: 28vw;
   }
   .ship h1 {
     font-size: 5vw;
@@ -177,8 +195,45 @@
   .ship-t{
     margin-top: 2vh;
   }
-  /* .plants-t h1 {
-    font-size: 28vw;
-    margin-bottom: 15vw;
-  } */
+}
+@media all and (max-width: 340px){
+  .weather, .weather-bg, .weather-side {
+    height: 31.125vh;
+  }
+  .weather-side{
+    left: 49vw;
+  }
+  .ship, #ShipBG{
+    height: 57.25vh;
+  }
+  .control, .levers {
+    height: 37.25vh;
+  }
+  .lever-wrap:first-of-type {
+    margin-left: 8vw;
+  }
+  .buttons {
+    margin: 11vh auto;
+  }
+  .close-w {
+    margin-left: 5vw;
+    font-size: 28px;
+}
+  .chevron{
+    font-size: 19px;
+    left: 84.4vw;
+  }
+  .close-a {
+    padding-left: 0;
+    font-size: 28px;
+  }
+  .ads-over h1{
+    font-size: 19vw;
+  }
+  .ads-over h2{
+    font-size: 5vw;
+  }
+  .ads-over p{
+    font-size: 4vw;
+  }
 }

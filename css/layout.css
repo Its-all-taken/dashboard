@@ -108,3 +108,8 @@ div{
   display: none;
   transition: all 0.5s ease;
 }
+.slick-initialized .slick-slide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}

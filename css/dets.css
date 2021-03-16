@@ -14,6 +14,9 @@
   height: 100%;
   background-color: #fff;
   color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .colour img{
   margin: 12px;
@@ -271,7 +274,7 @@ svg{
 }
  .ads-t{
   color: #fff;
-  position: absolute;
+  position: fixed;
 }
 .plants-t{
   font-family: Noto Sans;
@@ -294,7 +297,7 @@ svg{
   bottom: 2em;
 }
 .cola-t{
-  padding: 3em;
+  top: 7vh;
 }
 .cola-t h1{
   font-family: Noto Sans;
@@ -312,7 +315,7 @@ svg{
   font-weight: bold;
 }
 .ship-t h1{
-  font-size: calc(24px + 4vh);
+  font-size: calc(24px + 5vh);
   word-wrap: break-word;
   width: 8vw;
 }
