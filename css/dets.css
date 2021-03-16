@@ -179,13 +179,13 @@ svg{
   position: absolute;
   z-index: 2;
   font-size: 30px;
-  margin-left: 9vw;
-  margin-top: 0.625vh;
+  padding-left: 9vw;
+  padding-top: 0.625vh;
 }
 .close-w{
   font-size: 34px;
-  margin-left: 19vw;
-  margin-top: 1.375vh;
+  padding-left: 19vw;
+  padding-top: 1.375vh;
 }
 .colour{
   font-family: 'icomoon' !important;
