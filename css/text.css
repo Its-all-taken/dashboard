@@ -2,7 +2,6 @@ h2{
   font-family: Roboto;
   font-weight: 300;
   font-size: 14px;
-  line-height: 16px;
   text-align: center;
   color: #FFFFFF;
 }
@@ -59,7 +58,6 @@ h2{
   overflow-wrap: break-word;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  line-height: 26px;
   font-size: 2vw;
   color: #fff;
 }
