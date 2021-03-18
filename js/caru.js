@@ -6,6 +6,10 @@ $(document).ready(function(){
     arrows : false
   });
 
+  $( function() {
+  $( ".note" ).draggable({ containment: "overl", scroll: false });
+    } );
+
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")
     })

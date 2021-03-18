@@ -324,7 +324,45 @@ svg{
   text-align: left;
   font-size: 1vw;
 }
-
+.note{
+  position: absolute;
+  left: -25vh;
+  top: 30vh;
+  overflow: hidden;
+  width: 30vh;
+  height: 30vh;
+  background: #F2D059;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 2px 5px 6px rgba(0, 0, 0, 0.1);
+}
+.form{
+  position: relative;
+  margin-top: 75vh;
+  margin-left: 70vw;
+}
+.form-line{
+  display: flex;
+}
+.enter{
+  margin-top: 2vh;
+  margin-right: 2vw;
+  margin-left: auto;
+  width: 117.5px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px -1px 4px rgba(255, 251, 251, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.enter:hover{
+  box-shadow: inset -2px -4px 4px rgba(255, 255, 255, 0.25), inset 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+input{
+  width: 20vw;
+  background: none;
+  color: #fff;
+  font-size: 2vw;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
 
 /* фикс карусели */
 .ads img {

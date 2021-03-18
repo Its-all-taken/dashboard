@@ -79,6 +79,25 @@ h2{
   margin: 10px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  color: white;
+  color: #FFFFFF;
   position: absolute;
+}
+.form-line p{
+  width: 10vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+  color: #FFFFFF;
+  margin-left: 1vw;
+}
+.note p{
+  font-family: Bad Script;
+  font-size: 10vh;
+  color: #012685;
+  margin-left: 2vh;
+}
+.note p:first-of-type{
+  margin-top: 6vh;
+  font-size: 5vh;
+  transform: rotate(-10deg);
 }

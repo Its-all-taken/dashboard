@@ -108,6 +108,15 @@ div{
   display: none;
   transition: all 0.5s ease;
 }
+.overl{
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(70px);
+  width: 100vw;
+  height: 100vh;
+}
 .slick-initialized .slick-slide {
   display: flex !important;
   justify-content: center !important;
