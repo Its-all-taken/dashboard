@@ -1,14 +1,10 @@
 $(document).ready(function(){
   $('.ads-c').slick({
-    // autoplay:true,
-    // autoplaySpeed: 5000,
+    autoplay:true,
+    autoplaySpeed: 5000,
     dots: true,
     arrows : false
   });
-
-  $( function() {
-  $( ".note" ).draggable({ containment: "overl", scroll: false });
-    } );
 
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")
@@ -163,3 +159,18 @@ $( function() {
     }
   });
   });
+
+  $( function() {
+    $( ".note" ).draggable({ containment: "overl", scroll: false });
+  } );
+
+  function login(){
+      if ($("#loginf").val() > "1" && $("#passwordf").val() == "1234") {
+          $(".overl").addClass("blocker")
+          let logname = document.getElementById("loginf").value;
+          $("#username").text(logname);
+      }
+      else (
+        alert("access denied")
+      )
+  };

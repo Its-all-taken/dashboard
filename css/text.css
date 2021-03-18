@@ -28,7 +28,7 @@ h2{
   text-align: center;
   color: #000;
 }
-.name h1{
+.name h1, #username{
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 3vw;
@@ -89,6 +89,7 @@ h2{
   font-size: 2vw;
   color: #FFFFFF;
   margin-left: 1vw;
+  padding-top: 1.5vh;
 }
 .note p{
   font-family: Bad Script;

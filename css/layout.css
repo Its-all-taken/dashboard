@@ -49,6 +49,7 @@ div{
   grid-column: auto / span 3;
 }
 .name{
+  display: inline-flex;
   width: 77.333vw;
   height: 5.875vh;
 }

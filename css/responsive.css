@@ -30,7 +30,7 @@
   .header{
     grid-row: 1;
   }
-  .name h1{
+  .name h1,#username{
     font-size: 4vw;
   }
   .weather{
@@ -166,6 +166,9 @@
 }
 }
 @media all and (max-width: 550px){
+  .name{
+    flex-direction: column;
+  }
   .ui-slider-vertical .ui-slider-handle {
     left: -1.7vw;
 }
@@ -173,7 +176,7 @@
     width: 35.917vw;
     height: 32.25vh;
   }
-  .name h1{
+  .name h1, #username{
     font-size: 6vw;
   }
   #temperature, #unit {
