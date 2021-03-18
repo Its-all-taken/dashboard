@@ -1,15 +1,14 @@
 @media all and (min-width:740px) and (max-width: 1024px){
   .close-w{
-    margin-left: 18vw;
-    margin-top: 17px;
+    padding-left: 18vw;
   }
   .chevron{
     left: 42.5vw;
     top: 20px;
   }
-  .close-a{
+  /* .close-a{
     margin-left: 8.5vw;
-  }
+  } */
 }
 /* tablet */
 @media all and (min-width: 10px) and (max-width: 768px){
