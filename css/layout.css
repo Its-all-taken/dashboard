@@ -123,3 +123,19 @@ div{
   justify-content: center !important;
   align-items: center !important;
 }
+.downloadchrome{
+  display: none;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+  .downloadchrome{
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}

@@ -1,10 +1,15 @@
 $(document).ready(function(){
+
   $('.ads-c').slick({
     autoplay:true,
     autoplaySpeed: 5000,
     dots: true,
     arrows : false
   });
+
+  $(".close-saf").click(function (){
+      $(".downloadchrome").css("display",'none')
+    })
 
   $(".close-a").click(function (){
       $(".ads-over").toggleClass("blocker")

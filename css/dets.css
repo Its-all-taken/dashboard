@@ -341,21 +341,15 @@ svg{
   width: 28vw;
   height: 15vh;
 }
-.form-line{
-  display: flex;
-}
 .enter{
   width: 10vw;
   height: 3vw;
-  position: absolute;
-  justify-self: flex-end;
   margin-top: 2vh;
   border: none;
   right:0;
   background-color: rgba(255, 255, 255, 0.1);
 }
 .enter:hover{
-  /* background-color: rgba(85, 170, 45, 0.5); */
   box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2), inset 2px 3px 4px rgba(0, 0, 0, 0.25), inset 1px -3px 6px rgba(0, 0, 0, 0.1);
 }
 input{
@@ -366,9 +360,29 @@ input{
   border: none;
   border-radius: 0;
   border-bottom: 1px solid #fff;
-  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
-
+input:first-of-type{
+  margin-bottom: 2vh;
+}
+.close-saf{
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  padding-top: 1vh;
+  width: 40vh;
+  font-size: 3vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+a{
+  position: absolute;
+  margin-top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* фикс карусели */
 .ads img {
   margin: 0 27px;
