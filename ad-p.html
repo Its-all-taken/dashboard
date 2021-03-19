@@ -2,22 +2,74 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>zusammenstürzen</title>
+    <title>Yàn</title>
     <link rel="stylesheet" href="css/master.css">
+    <script src="js\jquery-3.5.1.js" charset="utf-8"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/touch-punch.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style media="screen">
+      * {
+        cursor: none;
+      }
       body{
-        background: white;
+        background: linear-gradient(-45deg, #71D7A5, #1B898A, #438E1F, #23d5ab);
+	      background-size: 400% 400%;
+	      animation: gradient 15s ease infinite;
         overflow: hidden;
       }
+      @keyframes gradient {
+	      0% {background-position: 0% 50%;}
+	      50% {background-position: 100% 50%;}
+	      100% {background-position: 0% 50%;}
+      }
       h1{
+        color: #fff;
+        height: 100vh;
         font-size: 40vh;
         display: flex;
         justify-content: center;
+        align-items: center;
+        transition: .5s;
+      }
+      h1:hover{
+        color: #98C21E;
+        transition: .2s;
+      }
+      .selector{
+        pointer-events: none;
+        position: absolute;
+        height: 5vh;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+      }
+      .tr{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .t2{
+        top: 40%;
+        transform: scaleX(-1);
       }
     </style>
+    <script type="text/javascript">
+      $(document).bind('mousemove', function(e){
+        $('.selector').css({
+        top: e.pageY ,
+        left:e.pageX
+        });
+      });
+      $( function() {
+        $( ".tr" ).draggable({scroll: false });
+      } );
+    </script>
   </head>
   <body>
+    <img class="selector" src="imgs/cur.png">
     <h1>豔</h1>
+    <img class="tr" src="imgs/tree.png">
+    <img class="tr t2" src="imgs/tree.png">
   </body>
 </html>
