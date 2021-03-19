@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>zusammenstürzen</title>
+    <link rel="stylesheet" href="css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      body{
+        overflow: hidden;
+        background: #000;
+        animation: bg 3s infinite;
+        font-family: Roboto;
+        color:  #152DFF;
+      }
+      @keyframes bg {
+        0%{background: #000;}
+        10%{background: #333;}
+        20%{background: #777;}
+      }
+      .ship1{
+        width: auto;
+        height: 80%;
+        left: 50%;
+        position: absolute;
+      }
+      .ship3{
+        width: auto;
+        height: 100%;
+        position: absolute;
+      }
+      .text{
+        overflow-wrap: anywhere;
+        width: 100%;
+        font-size: 35vh;
+        margin-top: -5vh;
+      }
+      img{
+        transition: 3s;
+      }
+      img:hover{
+        opacity: 0;
+        transition: 2s;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="ship1" src="imgs/1.png" alt="">
+    <img class="ship3" src="imgs/3.png" alt="">
+    <div class="text">
+      <h1>zusammenstürzen</h1>
+      <p>CoRoT-7 b</p>
+    </div>
+  </body>
+</html>

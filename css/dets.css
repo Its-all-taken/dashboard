@@ -18,6 +18,9 @@
   justify-content: center;
   align-items: center;
 }
+.ads-c img{
+  cursor: pointer;
+}
 .colour img{
   margin: 12px;
 }
@@ -336,8 +339,8 @@ svg{
 }
 .form{
   position: relative;
-  margin-top: 75vh;
-  margin-left: 70vw;
+  margin-top: 55vh;
+  margin-left: 75vw;
   width: 28vw;
   height: 15vh;
 }
@@ -365,24 +368,31 @@ input{
 input:first-of-type{
   margin-bottom: 2vh;
 }
+.welcome-text{
+  margin:10vh;
+}
+/* экран для сафари */
 .close-saf{
   cursor: pointer;
   display: flex;
-  position: absolute;
   justify-content: center;
   padding-top: 1vh;
   width: 40vh;
   font-size: 3vh;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  margin-top: 5%;
 }
 a{
-  position: absolute;
   margin-top: 5%;
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
+.downloadchrome h2:first-of-type{
+  margin-top: 20%;
+}
+
 /* фикс карусели */
 .ads img {
   margin: 0 27px;

@@ -28,7 +28,7 @@ h2{
   text-align: center;
   color: #000;
 }
-.name h1, #username{
+.name h1, #username, .welcome-text{
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 3vw;

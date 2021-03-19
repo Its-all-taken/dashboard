@@ -75,7 +75,11 @@ $(document).ready(function(){
       $("#clouds").text(clouds + " %");
       $("#humidity").text(humidity + " %");
       $("#windSpeed").text(windSpeed + " метр/сек");
-
+      $('#status').each(function() {
+          let text = $(this).text();
+          $(this).text(text.replace('с\x20', 'с\xa0'));
+      });
+      
       if (icon === '01d' || icon === '01n'){
         $("#Clear").css('visibility', 'visible')
         $("#Drizzle").css('display', 'none')
@@ -142,6 +146,7 @@ $(document).ready(function(){
     });
 });
 
+
 $( function() {
   let handle = $( "#custom-handle" );
   $( "#lever" ).slider({
@@ -173,7 +178,12 @@ $( function() {
       if ($("#loginf").val() > "1" && $("#passwordf").val() == "1234") {
           $(".overl").addClass("blocker")
           let logname = document.getElementById("loginf").value;
-          $("#username").text(logname);
+          if (jQuery(window).width() >= '551') {
+            $("#username").text("\xa0" + logname);
+          }
+          else {
+            $("#username").text(logname);
+          }
       }
       else (
         alert("access denied")
