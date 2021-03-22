@@ -79,7 +79,7 @@ $(document).ready(function(){
           let text = $(this).text();
           $(this).text(text.replace('с\x20', 'с\xa0'));
       });
-      
+
       if (icon === '01d' || icon === '01n'){
         $("#Clear").css('visibility', 'visible')
         $("#Drizzle").css('display', 'none')
@@ -180,6 +180,7 @@ $( function() {
           let logname = document.getElementById("loginf").value;
           if (jQuery(window).width() >= '551') {
             $("#username").text("\xa0" + logname);
+
           }
           else {
             $("#username").text(logname);
@@ -189,3 +190,13 @@ $( function() {
         alert("access denied")
       )
   };
+
+  function NewPlant(){
+    window.open(
+            "https://its-all-taken.github.io/dashboard/ad-p.html", "_blank");
+    };
+
+  function NewCoca(){
+    window.open(
+            "https://its-all-taken.github.io/dashboard/ad-p.html", "_blank");
+    };
