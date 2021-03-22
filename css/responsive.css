@@ -12,6 +12,9 @@
 }
 /* tablet */
 @media all and (min-width: 10px) and (max-width: 768px){
+  .arrow{
+    height: 2vh;
+  }
   .wrap{
     top:5%;
     left:50%;
@@ -29,7 +32,7 @@
   .header{
     grid-row: 1;
   }
-  .name h1,#username{
+  .name h1,#username,.welcome-text{
     font-size: 4vw;
   }
   .weather{
@@ -162,9 +165,26 @@
   }
   .close-a {
     padding-left: 1vw;
-}
+  }
+  input {
+    width: 20vw;
+    font-size: 3vw;
 }
 @media all and (max-width: 550px){
+  input {
+    width: 50vw;
+    font-size: 5vw;
+  }
+  .welcome-text {
+    margin-top: 55vw;
+  }
+  .form {
+    position: relative;
+    margin-top: auto;
+    margin-left: 10vh;
+    width: 28vw;
+    height: 15vh;
+  }
   .name{
     flex-direction: column;
   }
@@ -175,7 +195,7 @@
     width: 35.917vw;
     height: 32.25vh;
   }
-  .name h1, #username{
+  .name h1, #username,.welcome-text{
     font-size: 6vw;
   }
   #temperature, #unit {

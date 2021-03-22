@@ -198,5 +198,10 @@ $( function() {
 
   function NewCoca(){
     window.open(
-            "https://its-all-taken.github.io/dashboard/ad-p.html", "_blank");
+            "https://its-all-taken.github.io/dashboard/ad-k.html", "_blank");
+    };
+
+  function NewShp(){
+    window.open(
+            "https://its-all-taken.github.io/dashboard/ad-s.html", "_blank");
     };

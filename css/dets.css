@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
 }
-.ads-c img{
+.ads-c div{
   cursor: pointer;
 }
 .colour img{
@@ -329,11 +329,12 @@ svg{
 }
 .note{
   position: absolute;
-  left: -25vh;
+  left: -20vh;
   top: 30vh;
   overflow: hidden;
   width: 30vh;
   height: 30vh;
+  transform: rotate(15deg);
   background: #F2D059;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25), 2px 5px 6px rgba(0, 0, 0, 0.1);
 }
@@ -374,6 +375,7 @@ input:first-of-type{
 .welcome-text{
   margin:10vh;
 }
+
 /* экран для сафари */
 .close-saf{
   cursor: pointer;
