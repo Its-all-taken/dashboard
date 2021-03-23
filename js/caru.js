@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   $('.ads-c').slick({
-    autoplay:true,
-    autoplaySpeed: 5000,
+    // autoplay:true,
+    // autoplaySpeed: 5000,
     dots: true,
     arrows : false
   });
