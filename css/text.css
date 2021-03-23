@@ -39,7 +39,10 @@ h2{
   font-weight: 500;
   font-size: 2vw;
   color: #fff;
-  margin: 20px;
+  margin-top: 2.6vh;
+  margin-left: 2vh;
+  width: 8vw;
+  height: 100%;
 }
 #temperature, #unit{
   font-family: 'Roboto', sans-serif;
@@ -74,6 +77,14 @@ h2{
 }
 .weather-side span, .weather-side p{
   margin-left: 2.5vw;
+}
+.button p{
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .control p{
   margin: 10px;

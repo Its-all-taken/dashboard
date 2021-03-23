@@ -49,6 +49,9 @@
   z-index: 1;
   border-radius: 10px;
 }
+canvas{
+  border-radius: 10px;
+}
 .clou{
   border-radius: 5px;
   background: #fff;
@@ -60,6 +63,7 @@
   background-color: #11ffee00;
 }
 svg{
+  pointer-events: none;
   position: relative;
   width: 23.333vw;
   max-height: 58vh;
@@ -108,6 +112,30 @@ svg{
 .button:hover{
   color: #55AA2D;
   box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.9), inset 2px 3px 4px rgba(0, 0, 0, 0.25), inset 1px -3px 6px rgba(0, 0, 0, 0.1);
+}
+.ship-control{
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: inline-flex;
+}
+.s-c-buttons{
+  position: absolute;
+  display: flex;
+  right: 0;
+}
+.button-sh{
+  z-index: 2;
+  height: 2vh;
+  min-height: 40px;
+  width: 2vh;
+  min-width: 40px;
+  margin: 1vw;
+  right: 0;
+  background: rgb(255 255 255 / 0%);
+  border: .01vw solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.25);
+  box-shadow: inset 2px 2px 10px rgba(255, 255, 255, 0.1);
 }
 .levers{
   width: 22.917vw;
@@ -242,6 +270,15 @@ svg{
 }
 .meteo-f{
   d: path("M 154 0 L 146.4 0 L 73 1 L 127 18.7 L 127 135.3 L 123.7 145.9 Q 46 204 0 301.6 L 0 329.7 L 96.5 231.7 L 96.5 272.6 L 96.5 272.6 L 107.2 292.2 L 107.2 416.9 L 119.6 458.7 L 132 416.9 L 132 292.5 L 137.4 292.5 L 137.4 412.6 L 149.8 459.6 L 162.1 412.6 L 162.1 292.5 L 178.6 292.5 L 153.1 231.4 L 153.7 231.4 L 153.7 209.6 L 279 337 L 279 308.9 Q 216 206 153.7 150.9 L 154 0 L 207 1 L 154 19");
+}
+.first-s{
+  d: path("M 154 0 L 146.39 0 L 127 18.68 L 118 63 L 97 151 L 0 301.63 L 0 329.71 L 96.52 231.68 L 96.52 272.58 L 96.52 272.58 L 107.23 292.21 L 107.23 416.85 L 119.6 458.7 L 131.97 416.85 L 131.97 292.5 L 137.38 292.5 L 137.38 412.56 L 149.75 459.58 L 162.13 412.56 L 162.13 292.5 L 178.56 292.5 L 153.1 231.41 L 153.71 231.41 L 153.71 209.62 L 279 336.96 L 279 308.87 L 168 150 L 168 150");
+}
+.second-s{
+  d: path("M 154 0 L 146.39 0 L 127 18.68 L 127 135.31 L 125 147 L 1 321 L 0 329.71 L 96.52 231.68 L 96.52 272.58 L 96.52 272.58 L 107.23 292.21 L 108 413 L 120 365 L 132 413 L 131.97 292.5 L 137.38 292.5 L 137.38 412.56 L 150 365 L 162.13 412.56 L 162.13 292.5 L 178.56 292.5 L 153.1 231.41 L 153.71 231.41 L 153.71 209.62 L 279 336.96 L 279 326 L 153.71 150.94 L 153.71 149");
+}
+.third-s{
+  d: path("M 154 0 L 146.39 0 L 127 18.68 L 127 135.31 L 123.65 145.86 L 0 301.63 L 0 329.71 L 96.52 231.68 L 96.52 272.58 L 96.52 272.58 L 107.23 292.21 L 107.23 416.85 L 119 417 L 131.97 416.85 L 131.97 292.5 L 137.38 292.5 L 140 417 L 150 417 L 162 417 L 162.13 292.5 L 178.56 292.5 L 153.1 231.41 L 153.71 231.41 L 153.71 209.62 L 279 336.96 L 279 308.87 L 153.71 150.94 L 153.71 149");
 }
 .ship-svg-2{
   pointer-events: none;
@@ -396,6 +433,10 @@ a{
 }
 .downloadchrome h2:first-of-type{
   margin-top: 20%;
+}
+#slider-c{
+  width: 100%;
+  height: 100px;
 }
 
 /* фикс карусели */
