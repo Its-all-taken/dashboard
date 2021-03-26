@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   $('.ads-c').slick({
-    // autoplay:true,
-    // autoplaySpeed: 5000,
+    autoplay:true,
+    autoplaySpeed: 5000,
     dots: true,
     arrows : false
   });
@@ -58,7 +58,7 @@ $(document).ready(function(){
     })
 
   $(".met").click(function (){
-    $(".meteo").toggleClass("third-s")
+    $(".meteo").removeClass("third-s")
     $(".meteo").removeClass("first-s")
     $(".meteo").removeClass("second-s")
     $(".ship-svg").toggleClass("ship-svg-ice")

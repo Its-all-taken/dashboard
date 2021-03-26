@@ -130,7 +130,8 @@ svg{
   min-height: 40px;
   width: 2vh;
   min-width: 40px;
-  margin: 1vw;
+  margin-right: 1vw;
+  margin-top: 1vw;
   right: 0;
   background: rgb(255 255 255 / 0%);
   border: .01vw solid rgba(255, 255, 255, 0.25);
