@@ -33,8 +33,6 @@ body{
   grid-template-rows: .1fr .2fr .2fr;
   column-gap: 44px;
   row-gap: 25px;
-  width: 93.583vw;
-  height: 85.625vh;
   /* margin: 3vh 3vw 3vh 3vw; */
   top: 50%;
   left: 50%;
@@ -64,6 +62,7 @@ div{
 }
 .weather{
   display: flex;
+  position: relative;
   width: 45.833vw;
   height: 38.125vh;
   grid-column: 1 / span 2;;
@@ -84,6 +83,7 @@ div{
   overflow: hidden;
 }
 .ads{
+  position: relative;
   border-radius: 10px;
   width: 11.833vw;
   height: 76vh;

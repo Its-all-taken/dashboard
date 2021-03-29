@@ -1,3 +1,9 @@
+.void{
+  display: none;
+}
+.void2{
+  display: none;
+}
 .slick-dots{
   top:71.5vh;
   position: absolute;
@@ -86,8 +92,8 @@ svg{
   min-height: 50px;
   width: 4.167vw;
   height: 4.167vw;
-  max-width: 90px;
-  max-height: 90px;
+  max-width: 70px;
+  max-height: 70px;
   background: #EEEEEE;
   box-shadow: inset 2px 3px 4px rgba(255, 255, 255, 0.25), inset -2px -3px 6px rgba(0, 0, 0, 0.1);
   border-radius: 100px;
@@ -99,6 +105,8 @@ svg{
 .button-s{
   min-width: 60px;
   min-height: 30px;
+  max-width: 80px;
+  max-height: 40px;
   width: 5.417vw;
   height: 2.500vw;
   background: #EEEEEE;
@@ -181,11 +189,11 @@ svg{
 .chevron{
   opacity: .6;
   transition: .8s ease;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   color: #fff;
-  left: 43.4vw;
-  top: 17px;
+  right: 1vw;
+  top: 1vw;
   z-index: 2;
   font-family: 'icomoon' !important;
   font-size: 21px;
@@ -214,13 +222,14 @@ svg{
   position: absolute;
   z-index: 2;
   font-size: 30px;
-  padding-left: 9vw;
-  padding-top: 0.625vh;
+  right: 0.5vw;
+  top: 0.625vh;
 }
 .close-w{
+  position: absolute;
   font-size: 34px;
-  padding-left: 19vw;
-  padding-top: 1.375vh;
+  right: 1vw;
+  top: 1vw;
 }
 .colour{
   font-family: 'icomoon' !important;
@@ -367,7 +376,7 @@ svg{
 }
 .note{
   position: absolute;
-  left: -20vh;
+  left: -25vh;
   top: 30vh;
   overflow: hidden;
   width: 30vh;
@@ -398,7 +407,6 @@ svg{
   box-shadow: inset 0px 0px 1px 2px rgba(255, 255, 255, 0.2), inset 2px 3px 4px rgba(0, 0, 0, 0.25), inset 1px -3px 6px rgba(0, 0, 0, 0.1);
 }
 input{
-  width: 20vw;
   background: none;
   color: #fff;
   font-size: 2vw;

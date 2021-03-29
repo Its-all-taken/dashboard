@@ -1,14 +1,44 @@
-@media all and (min-width:740px) and (max-width: 1024px){
-  .close-w{
-    padding-left: 18vw;
+@media all and (min-width: 1400px){
+  .name h1, #username, .welcome-text {
+    font-size: 2vw;
   }
-  .chevron{
-    left: 42.5vw;
-    top: 20px;
+  #temperature, #unit {
+    font-size: 3.333vw;
   }
-  /* .close-a{
-    margin-left: 8.5vw;
-  } */
+  #status {
+    font-size: 1.5vw;
+  }
+  .weather-side p,  .weather-side span  {
+    font-size: 1.3vw;
+  }
+  .button-r{
+    font-size: calc(7px + 0.8vw);
+  }
+  .button-s{
+    font-size: calc(3px + 0.8vw);
+  }
+  .l-hole {
+    height: 9.167vw;
+  }
+  .l-hand {
+    width: 6.286vw;
+  }
+  .ui-slider-vertical .ui-slider-handle {
+    left: -2.3vw;
+  }
+  .ship-t h1 {
+    font-size: calc(24px + 7vh);
+  }
+  .enter{
+    max-width: none;
+    max-height: none;
+  }
+  input{
+    font-size: 1.3vw;
+  }
+  .form {
+    width: 20vw;
+  }
 }
 /* tablet */
 @media all and (min-width: 10px) and (max-width: 1010px){
@@ -39,14 +69,6 @@
     width: 100%;
     height: 26.125vh;
     grid-row: 2;
-  }
-  .chevron{
-    top: 1.5vh;
-    left: 84.4vw;
-  }
-  .close-w{
-    padding-top: 1vh;
-    padding-left: 28vw;
   }
   .weather-bg{
     width: 100%;
@@ -107,9 +129,6 @@
     width: 100%;
     height: 30vh;
   }
-  .close-a {
-    margin-left: 82vw;
-  }
   .plants-t{
     top: 15%;
     left: 20.1%;
@@ -146,7 +165,7 @@
     margin-top: -4vh;
   }
   .weather-side p:first-of-type {
-    margin-top: -1vh;
+    margin-top: 4vh;
   }
   .ui-slider-vertical .ui-slider-handle {
     left: -2.4vw;
@@ -163,9 +182,6 @@
   }
   .ads-over p{
     font-size: 2.167vw;
-  }
-  .close-a {
-    padding-left: 1vw;
   }
   input {
     width: 20vw;
@@ -209,9 +225,6 @@
     width: 43.917vw;
     left: 46.1vw;
 }
-.close-w {
-    padding-left: 28vw;
-  }
   .ship h1 {
     font-size: 5vw;
   }
@@ -239,15 +252,12 @@
     margin: 11vh auto;
   }
   .close-w {
-    margin-left: 5vw;
     font-size: 28px;
 }
   .chevron{
     font-size: 19px;
-    left: 84.4vw;
   }
-  .close-a {
-    padding-left: 0;
+  .close-a{
     font-size: 28px;
   }
   .ads-over h1{
