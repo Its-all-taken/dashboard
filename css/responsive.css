@@ -27,7 +27,7 @@
     left: -2.3vw;
   }
   .ship-t h1 {
-    font-size: calc(24px + 7vh);
+    font-size: calc(15px + 5vh);
   }
   .enter{
     max-width: none;
