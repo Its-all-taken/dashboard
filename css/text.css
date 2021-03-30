@@ -37,7 +37,7 @@ h2{
 .ship h1{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: calc(15px + 5vh);;
   color: #fff;
   margin-top: 2.6vh;
   margin-left: 2vh;
