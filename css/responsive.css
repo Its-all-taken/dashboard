@@ -41,7 +41,7 @@
   }
 }
 /* tablet */
-@media all and (min-width: 10px) and (max-width: 1010px){
+@media all and (max-width: 1010px){
   .arrow{
     height: 2vh;
   }
