@@ -153,7 +153,7 @@ $(document).ready(function(){
         $("#Snow").css('display', 'none')
         $("#Clouds-heavy").css('display', 'none')
       }
-      else if (icon === '04d' || icon === '04n'){
+      else if (icon === '04d' || icon === '04n' || icon === '50d'){
         $("#Clouds-heavy").css('visibility', 'visible')
         $("#Clouds").css('display', 'none')
         $("#Clear").css('display', 'none')
