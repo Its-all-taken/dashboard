@@ -414,6 +414,7 @@ input{
   border-radius: 0;
   border-bottom: 1px solid #fff;
   margin-bottom: 1vh;
+  width: 20vw;
 }
 input:first-of-type{
   margin-bottom: 2vh;
