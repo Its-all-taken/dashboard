@@ -1,4 +1,4 @@
-@media all and (min-width: 1500px){
+@media all and (min-width: 1700px){
   .name h1, #username, .welcome-text {
     font-size: 2vw;
   }
@@ -18,16 +18,18 @@
     font-size: calc(3px + 0.8vw);
   }
   .l-hole {
-    height: 9.167vw;
+    height: 7vw;
+    width: 1.5vw;
   }
   .l-hand {
-    width: 6.286vw;
+    width: 5vw;
+    height: 1vw;
   }
   .ui-slider-vertical .ui-slider-handle {
-    left: -2.3vw;
+    left: -1.7vw;
   }
   .ship-t h1 {
-    font-size: calc(15px + 5vh);
+    font-size: 5vw;
   }
   .enter{
     max-width: none;
@@ -69,6 +71,7 @@
     width: 100%;
     height: 26.125vh;
     grid-row: 2;
+    overflow: hidden;
   }
   .weather-bg{
     width: 100%;
@@ -77,7 +80,8 @@
   .weather-side{
     height: 26.125vh;
     width: 34.917vw;
-    left: 53.2vw;
+    left: 55.2vw;
+    right: 0;
   }
   .weather-side p,.weather-side span{
     font-size: 2.7vw;
@@ -186,6 +190,11 @@
   input {
     width: 20vw;
     font-size: 3vw;
+  }
+  .chevron{
+    right: 1.5vw;
+    top: 2vw;
+  }
 }
 @media all and (max-width: 550px){
   input {
@@ -207,7 +216,7 @@
   }
   .ui-slider-vertical .ui-slider-handle {
     left: -1.7vw;
-}
+  }
   .levers {
     width: 35.917vw;
     height: 32.25vh;
@@ -217,14 +226,14 @@
   }
   #temperature, #unit {
     font-size: 12.333vw;
-}
-#status, .weather-side p, .weather-side span {
+  }
+  #status, .weather-side p, .weather-side span {
     font-size: 4vw;
-}
-.weather-side {
+  }
+  .weather-side {
     width: 43.917vw;
     left: 46.1vw;
-}
+  }
   .ship h1 {
     font-size: 5vw;
   }
@@ -233,6 +242,9 @@
   }
 }
 @media all and (max-width: 340px){
+  .wrap{
+    width: auto;
+  }
   .weather, .weather-bg, .weather-side {
     height: 31.125vh;
   }
@@ -248,14 +260,21 @@
   .lever-wrap:first-of-type {
     margin-left: 8vw;
   }
+  .weather-side p:first-of-type {
+    margin-top: 6vh;
+  }
   .buttons {
     margin: 11vh auto;
   }
   .close-w {
+    right: 1vw;
+    top: 2vw;
     font-size: 28px;
 }
   .chevron{
-    font-size: 19px;
+    right: 2vw;
+    top: 3vw;
+    font-size: 17px;
   }
   .close-a{
     font-size: 28px;
@@ -268,5 +287,32 @@
   }
   .ads-over p{
     font-size: 4vw;
+  }
+  .ship-t{
+    margin-top: -4vh;
+  }
+  .ship-t h1{
+    font-size: 13vw;
+  }
+  .cola-t{
+    margin-top: -4vh;
+  }
+  .plants-t h1 {
+    font-size: 23vw;
+  }
+  .slick-dots{
+    top: 25.5vh;
+  }
+  svg {
+    width: 20vh;
+    top: 49%;
+  }
+  .ship-svg-2 {
+    width: 22vh;
+    top: 60%;
+  }
+  .button-sh {
+    margin-right: 3vw;
+    margin-top: 3vw;
   }
 }
